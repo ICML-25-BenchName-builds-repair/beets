@@ -13,13 +13,15 @@
 # included in all copies or substantial portions of the Software.
 
 
+
 import unittest
 from os import path, remove
 from shutil import rmtree
 from tempfile import mkdtemp
+from unittest.mock import MagicMock, Mock, PropertyMock
+
 from test import _common
 from test.helper import TestHelper
-from unittest.mock import MagicMock, Mock, PropertyMock
 
 from beets import config
 from beets.dbcore import OrQuery
