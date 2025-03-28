@@ -283,6 +283,7 @@ class SmartPlaylistTest(_common.TestCase):
         self.assertEqual(content, b"http://beets:8337/item/3/file\n")
 
 
+
 class SmartPlaylistCLITest(_common.TestCase, TestHelper):
     def setUp(self):
         self.setup_beets()
