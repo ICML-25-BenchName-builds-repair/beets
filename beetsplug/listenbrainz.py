@@ -255,3 +255,4 @@ class ListenBrainzPlugin(BeetsPlugin):
     def get_last_weekly_jams(self):
         """Returns a list of weekly jams."""
         return self.get_weekly_playlist(3)
+
