@@ -19,7 +19,6 @@ import itertools
 import os
 import re
 import unittest
-from test import _common
 from unittest.mock import MagicMock, patch
 
 import confuse
@@ -29,6 +28,7 @@ from beets import logging
 from beets.library import Item
 from beets.util import bytestring_path
 from beetsplug import lyrics
+from test import _common
 
 log = logging.getLogger("beets.test_lyrics")
 raw_backend = lyrics.Backend({}, log)
@@ -89,12 +89,16 @@ class LyricsPluginTest(unittest.TestCase):
             ("CHVRCHΞS", ["song"]), list(lyrics.search_pairs(item))[0]
         )
 
-        item = Item(artist="横山克", title="song", artist_sort="Masaru Yokoyama")
+        item = Item(
+            artist="横山克", title="song", artist_sort="Masaru Yokoyama"
+        )
         self.assertIn(("横山克", ["song"]), lyrics.search_pairs(item))
         self.assertIn(("Masaru Yokoyama", ["song"]), lyrics.search_pairs(item))
 
         # Make sure that the original artist name is still the first entry
-        self.assertEqual(("横山克", ["song"]), list(lyrics.search_pairs(item))[0])
+        self.assertEqual(
+            ("横山克", ["song"]), list(lyrics.search_pairs(item))[0]
+        )
 
     def test_search_pairs_multi_titles(self):
         item = Item(title="1 / 2", artist="A")
@@ -517,14 +521,14 @@ class GeniusFetchTest(GeniusBaseTest):
                         {
                             "result": {
                                 "primary_artist": {
-                                    "name": "\u200Bblackbear",
+                                    "name": "\u200bblackbear",
                                 },
                                 "url": "blackbear_url",
                             }
                         },
                         {
                             "result": {
-                                "primary_artist": {"name": "El\u002Dp"},
+                                "primary_artist": {"name": "El\u002dp"},
                                 "url": "El-p_url",
                             }
                         },
@@ -798,11 +802,11 @@ class SlugTests(unittest.TestCase):
         self.assertEqual(
             lyrics.slug(text), "multiple-spaces-and-symbols-merged"
         )
-        text = "\u200Bno-width-space"
+        text = "\u200bno-width-space"
         self.assertEqual(lyrics.slug(text), "no-width-space")
 
         # variations of dashes should get standardized
-        dashes = ["\u200D", "\u2010"]
+        dashes = ["\u200d", "\u2010"]
         for dash1, dash2 in itertools.combinations(dashes, 2):
             self.assertEqual(lyrics.slug(dash1), lyrics.slug(dash2))
 

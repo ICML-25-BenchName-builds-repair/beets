@@ -12,18 +12,17 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""Test module for file ui/commands.py
-"""
+"""Test module for file ui/commands.py"""
 
 
 import os
 import shutil
 import unittest
-from test import _common
 
 from beets import library, ui
 from beets.ui import commands
 from beets.util import syspath
+from test import _common
 
 
 class QueryTest(_common.TestCase):
