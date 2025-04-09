@@ -17,8 +17,6 @@ import unittest
 from os import path, remove
 from shutil import rmtree
 from tempfile import mkdtemp
-from test import _common
-from test.helper import TestHelper
 from unittest.mock import MagicMock, Mock, PropertyMock
 
 from beets import config
@@ -28,6 +26,8 @@ from beets.library import Album, Item, parse_query_string
 from beets.ui import UserError
 from beets.util import CHAR_REPLACE, bytestring_path, py3_path, syspath
 from beetsplug.smartplaylist import SmartPlaylistPlugin
+from test import _common
+from test.helper import TestHelper
 
 
 class SmartPlaylistTest(_common.TestCase):
@@ -241,7 +241,6 @@ class SmartPlaylistTest(_common.TestCase):
             + b"http://beets:8337/files/tagada.mp3\n",
         )
 
-
     def test_playlist_update_uri_template(self):
         spl = SmartPlaylistPlugin()
 
@@ -263,7 +262,9 @@ class SmartPlaylistTest(_common.TestCase):
         spl._matched_playlists = [pl]
 
         dir = bytestring_path(mkdtemp())
-        config["smartplaylist"]["uri_template"] = "http://beets:8337/item/$id/file"
+        config["smartplaylist"][
+            "uri_template"
+        ] = "http://beets:8337/item/$id/file"
         config["smartplaylist"]["playlist_dir"] = py3_path(dir)
         try:
             spl.update_playlists(lib)
