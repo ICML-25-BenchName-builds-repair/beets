@@ -12,20 +12,19 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""Test file manipulation functionality of Item.
-"""
+"""Test file manipulation functionality of Item."""
 
 import os
 import shutil
 import stat
 import unittest
 from os.path import join
-from test import _common
-from test._common import item, touch
 
 import beets.library
 from beets import util
 from beets.util import MoveOperation, bytestring_path, syspath
+from test import _common
+from test._common import item, touch
 
 
 class MoveTest(_common.TestCase):

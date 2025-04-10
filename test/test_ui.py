@@ -12,8 +12,7 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""Tests for the command-line interface.
-"""
+"""Tests for the command-line interface."""
 
 import os
 import platform
@@ -22,8 +21,6 @@ import shutil
 import subprocess
 import sys
 import unittest
-from test import _common
-from test.helper import TestHelper, capture_stdout, control_stdin, has_program
 from unittest.mock import Mock, patch
 
 from confuse import ConfigError
@@ -33,6 +30,8 @@ from beets import autotag, config, library, plugins, ui, util
 from beets.autotag.match import distance
 from beets.ui import commands
 from beets.util import MoveOperation, syspath
+from test import _common
+from test.helper import TestHelper, capture_stdout, control_stdin, has_program
 
 
 class ListTest(unittest.TestCase):

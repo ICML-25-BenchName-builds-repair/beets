@@ -16,10 +16,10 @@
 
 
 import unittest
-from test.helper import TestHelper
 
 from beets import config, ui
 from beetsplug import bucket
+from test.helper import TestHelper
 
 
 class BucketPluginTest(unittest.TestCase, TestHelper):

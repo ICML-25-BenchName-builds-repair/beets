@@ -11,8 +11,7 @@
 #
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
-"""Tests for base utils from the beets.util package.
-"""
+"""Tests for base utils from the beets.util package."""
 
 import os
 import platform
@@ -20,10 +19,10 @@ import re
 import subprocess
 import sys
 import unittest
-from test import _common
 from unittest.mock import Mock, patch
 
 from beets import util
+from test import _common
 
 
 class UtilTest(unittest.TestCase):

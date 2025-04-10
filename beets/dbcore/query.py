@@ -12,8 +12,7 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""The Query type hierarchy for DBCore.
-"""
+"""The Query type hierarchy for DBCore."""
 
 from __future__ import annotations
 
@@ -122,8 +121,7 @@ class NamedQuery(Query):
     """
 
     @abstractmethod
-    def __init__(self, pattern):
-        ...
+    def __init__(self, pattern): ...
 
 
 P = TypeVar("P")

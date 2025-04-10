@@ -12,18 +12,17 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""Test module for file ui/__init__.py
-"""
+"""Test module for file ui/__init__.py"""
 
 import os
 import shutil
 import unittest
 from copy import deepcopy
 from random import random
-from test import _common
-from test.helper import control_stdin
 
 from beets import config, ui
+from test import _common
+from test.helper import control_stdin
 
 
 class InputMethodsTest(_common.TestCase):
