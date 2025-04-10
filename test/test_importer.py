@@ -13,8 +13,7 @@
 # included in all copies or substantial portions of the Software.
 
 
-"""Tests for the general importer functionality.
-"""
+"""Tests for the general importer functionality."""
 import os
 import re
 import shutil
@@ -25,13 +24,6 @@ import unittest
 from io import StringIO
 from tarfile import TarFile
 from tempfile import mkstemp
-from test import _common
-from test.helper import (
-    ImportSessionFixture,
-    TestHelper,
-    capture_log,
-    has_program,
-)
 from unittest.mock import Mock, patch
 from zipfile import ZipFile
 
@@ -41,6 +33,13 @@ from beets import autotag, config, importer, logging, util
 from beets.autotag import AlbumInfo, AlbumMatch, TrackInfo
 from beets.importer import albums_in_dir
 from beets.util import bytestring_path, displayable_path, py3_path, syspath
+from test import _common
+from test.helper import (
+    ImportSessionFixture,
+    TestHelper,
+    capture_log,
+    has_program,
+)
 
 
 class AutotagStub:
@@ -618,7 +617,7 @@ class ImportSingletonTest(_common.TestCase, ImportHelper):
         self.assertEqual(len(self.lib.albums()), 2)
 
     def test_set_fields(self):
-        genre = "\U0001F3B7 Jazz"
+        genre = "\U0001f3b7 Jazz"
         collection = "To Listen"
 
         config["import"]["set_fields"] = {
@@ -809,7 +808,7 @@ class ImportTest(_common.TestCase, ImportHelper):
             self.lib.items().get().data_source
 
     def test_set_fields(self):
-        genre = "\U0001F3B7 Jazz"
+        genre = "\U0001f3b7 Jazz"
         collection = "To Listen"
         comments = "managed by beets"
 

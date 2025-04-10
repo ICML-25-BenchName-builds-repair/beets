@@ -12,13 +12,12 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""Test the advancedrewrite plugin for various configurations.
-"""
+"""Test the advancedrewrite plugin for various configurations."""
 
 import unittest
-from test.helper import TestHelper
 
 from beets.ui import UserError
+from test.helper import TestHelper
 
 PLUGIN_NAME = "advancedrewrite"
 

@@ -12,17 +12,16 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""Tests for the DBCore database abstraction.
-"""
+"""Tests for the DBCore database abstraction."""
 
 import os
 import shutil
 import sqlite3
 import unittest
 from tempfile import mkstemp
-from test import _common
 
 from beets import dbcore
+from test import _common
 
 # Fixture: concrete database and model classes. For migration tests, we
 # have multiple models with different numbers of fields.

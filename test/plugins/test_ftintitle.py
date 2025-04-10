@@ -16,9 +16,9 @@
 
 
 import unittest
-from test.helper import TestHelper
 
 from beetsplug import ftintitle
+from test.helper import TestHelper
 
 
 class FtInTitlePluginFunctional(unittest.TestCase, TestHelper):
