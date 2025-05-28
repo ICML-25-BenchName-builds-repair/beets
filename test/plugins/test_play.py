@@ -18,11 +18,11 @@
 import os
 import sys
 import unittest
-from test.helper import TestHelper, control_stdin
 from unittest.mock import ANY, patch
 
 from beets.ui import UserError
 from beets.util import open_anything
+from test.helper import TestHelper, control_stdin
 
 
 @patch("beetsplug.play.util.interactive_open")

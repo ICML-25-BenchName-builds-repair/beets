@@ -1,9 +1,9 @@
 import unittest
-from test.helper import TestHelper
 
 import responses
 
 from beetsplug.plexupdate import get_music_section, update_plex
+from test.helper import TestHelper
 
 
 class PlexUpdateTest(unittest.TestCase, TestHelper):

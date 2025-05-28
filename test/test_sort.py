@@ -12,14 +12,13 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""Various tests for querying the library database.
-"""
+"""Various tests for querying the library database."""
 
 import unittest
-from test import _common
 
 import beets.library
 from beets import config, dbcore
+from test import _common
 
 
 # A test case class providing a library with some dummy data and some

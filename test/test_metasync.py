@@ -18,11 +18,11 @@ import platform
 import time
 import unittest
 from datetime import datetime
-from test import _common
-from test.helper import TestHelper
 
 from beets.library import Item
 from beets.util import py3_path
+from test import _common
+from test.helper import TestHelper
 
 
 def _parsetime(s):
@@ -71,12 +71,12 @@ class MetaSyncTest(_common.TestCase, TestHelper):
         items[1].album = "An Awesome Wave"
 
         if _is_windows():
-            items[
-                0
-            ].path = "G:\\Music\\Alt-J\\An Awesome Wave\\03 Tessellate.mp3"
-            items[
-                1
-            ].path = "G:\\Music\\Alt-J\\An Awesome Wave\\04 Breezeblocks.mp3"
+            items[0].path = (
+                "G:\\Music\\Alt-J\\An Awesome Wave\\03 Tessellate.mp3"
+            )
+            items[1].path = (
+                "G:\\Music\\Alt-J\\An Awesome Wave\\04 Breezeblocks.mp3"
+            )
         else:
             items[0].path = "/Music/Alt-J/An Awesome Wave/03 Tessellate.mp3"
             items[1].path = "/Music/Alt-J/An Awesome Wave/04 Breezeblocks.mp3"

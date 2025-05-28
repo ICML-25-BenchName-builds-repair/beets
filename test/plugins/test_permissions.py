@@ -1,11 +1,8 @@
-"""Tests for the 'permissions' plugin.
-"""
+"""Tests for the 'permissions' plugin."""
 
 import os
 import platform
 import unittest
-from test._common import touch
-from test.helper import TestHelper
 from unittest.mock import Mock, patch
 
 from beets.util import displayable_path
@@ -14,6 +11,8 @@ from beetsplug.permissions import (
     convert_perm,
     dirs_in_library,
 )
+from test._common import touch
+from test.helper import TestHelper
 
 
 class PermissionsPluginTest(unittest.TestCase, TestHelper):

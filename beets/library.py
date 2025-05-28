@@ -12,8 +12,7 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""The core data store and collection logic for beets.
-"""
+"""The core data store and collection logic for beets."""
 
 import os
 import re

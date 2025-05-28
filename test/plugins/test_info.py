@@ -14,11 +14,11 @@
 
 
 import unittest
-from test.helper import TestHelper
 
 from mediafile import MediaFile
 
 from beets.util import displayable_path
+from test.helper import TestHelper
 
 
 class InfoTest(unittest.TestCase, TestHelper):

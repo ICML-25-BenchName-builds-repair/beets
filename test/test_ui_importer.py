@@ -19,11 +19,11 @@ test_importer module. But here the test importer inherits from
 """
 
 import unittest
-from test import test_importer
-from test._common import DummyIO
 
 from beets import config, importer
 from beets.ui.commands import TerminalImportSession
+from test import test_importer
+from test._common import DummyIO
 
 
 class TerminalImportSessionFixture(TerminalImportSession):
