@@ -318,7 +318,7 @@ def input_options(
 
         # Wrap the query text.
         # Start prompt with U+279C: Heavy Round-Tipped Rightwards Arrow
-        prompt = colorize("action", "\u279C ")
+        prompt = colorize("action", "\u279c ")
         line_length = 0
         for i, (part, length) in enumerate(
             zip(prompt_parts, prompt_part_lengths)
@@ -387,7 +387,7 @@ def input_yn(prompt, require=False):
     "yes" unless `require` is `True`, in which case there is no default.
     """
     # Start prompt with U+279C: Heavy Round-Tipped Rightwards Arrow
-    yesno = colorize("action", "\u279C ") + colorize(
+    yesno = colorize("action", "\u279c ") + colorize(
         "action_description", "Enter Y or N:"
     )
     sel = input_options(("y", "n"), require, prompt, yesno)

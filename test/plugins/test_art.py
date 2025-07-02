@@ -18,8 +18,6 @@
 import os
 import shutil
 import unittest
-from test import _common
-from test.helper import capture_log
 from unittest.mock import patch
 
 import confuse
@@ -30,6 +28,8 @@ from beets.autotag import AlbumInfo, AlbumMatch
 from beets.util import syspath
 from beets.util.artresizer import ArtResizer
 from beetsplug import fetchart
+from test import _common
+from test.helper import capture_log
 
 logger = logging.getLogger("beets.test_art")
 

@@ -12,18 +12,17 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""Tests for autotagging functionality.
-"""
+"""Tests for autotagging functionality."""
 
 import re
 import unittest
-from test import _common
 
 from beets import autotag, config
 from beets.autotag import AlbumInfo, TrackInfo, match
 from beets.autotag.hooks import Distance, string_dist
 from beets.library import Item
 from beets.util import plurality
+from test import _common
 
 
 class PluralityTest(_common.TestCase):
