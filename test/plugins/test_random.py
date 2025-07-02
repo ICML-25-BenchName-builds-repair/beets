@@ -12,16 +12,15 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""Test the beets.random utilities associated with the random plugin.
-"""
+"""Test the beets.random utilities associated with the random plugin."""
 
 
 import math
 import unittest
 from random import Random
-from test.helper import TestHelper
 
 from beets import random
+from test.helper import TestHelper
 
 
 class RandomTest(unittest.TestCase, TestHelper):

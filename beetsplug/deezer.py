@@ -12,8 +12,7 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""Adds Deezer release and track search support to the autotagger
-"""
+"""Adds Deezer release and track search support to the autotagger"""
 
 import collections
 import time

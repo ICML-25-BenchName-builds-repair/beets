@@ -12,22 +12,21 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""Tests for the `filefilter` plugin.
-"""
+"""Tests for the `filefilter` plugin."""
 
 
 import os
 import shutil
 import unittest
-from test import _common
-from test.helper import capture_log
-from test.test_importer import ImportHelper
 
 from mediafile import MediaFile
 
 from beets import config
 from beets.util import bytestring_path, displayable_path, syspath
 from beetsplug.filefilter import FileFilterPlugin
+from test import _common
+from test.helper import capture_log
+from test.test_importer import ImportHelper
 
 
 class FileFilterPluginTest(unittest.TestCase, ImportHelper):

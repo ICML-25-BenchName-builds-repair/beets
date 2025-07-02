@@ -1,10 +1,7 @@
 """Tests for the 'spotify' plugin"""
 
-
 import os
 import unittest
-from test import _common
-from test.helper import TestHelper
 from urllib.parse import parse_qs, urlparse
 
 import responses
@@ -12,6 +9,8 @@ import responses
 from beets import config
 from beets.library import Item
 from beetsplug import spotify
+from test import _common
+from test.helper import TestHelper
 
 
 class ArgumentsMock:

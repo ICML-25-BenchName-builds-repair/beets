@@ -12,16 +12,15 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""Tests for the 'beatport' plugin.
-"""
+"""Tests for the 'beatport' plugin."""
 
 import unittest
 from datetime import timedelta
-from test import _common
-from test.helper import TestHelper
 
 from beets import library
 from beetsplug import beatport
+from test import _common
+from test.helper import TestHelper
 
 
 class BeatportTest(_common.TestCase, TestHelper):

@@ -16,10 +16,10 @@
 
 
 import unittest
-from test.helper import TestHelper
 
 from beets.autotag.mb import VARIOUS_ARTISTS_ID
 from beetsplug.albumtypes import AlbumTypesPlugin
+from test.helper import TestHelper
 
 
 class AlbumTypesPluginTest(unittest.TestCase, TestHelper):

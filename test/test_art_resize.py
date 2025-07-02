@@ -17,12 +17,12 @@
 
 import os
 import unittest
-from test import _common
-from test.helper import TestHelper
 from unittest.mock import patch
 
 from beets.util import command_output, syspath
 from beets.util.artresizer import IMBackend, PILBackend
+from test import _common
+from test.helper import TestHelper
 
 
 class DummyIMBackend(IMBackend):

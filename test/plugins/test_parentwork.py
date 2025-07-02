@@ -17,11 +17,11 @@
 
 import os
 import unittest
-from test.helper import TestHelper
 from unittest.mock import patch
 
 from beets.library import Item
 from beetsplug import parentwork
+from test.helper import TestHelper
 
 work = {
     "work": {
