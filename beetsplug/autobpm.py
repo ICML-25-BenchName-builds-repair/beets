@@ -11,8 +11,7 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""Uses Librosa to calculate the `bpm` field.
-"""
+"""Uses Librosa to calculate the `bpm` field."""
 
 
 from librosa import beat, load

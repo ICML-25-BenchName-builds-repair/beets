@@ -17,10 +17,6 @@ import itertools
 import os
 import shutil
 import unittest
-from test import helper
-from test._common import RSRC
-from test.test_importer import AutotagStub, ImportHelper
-from test.test_ui_importer import TerminalImportSessionSetup
 from unittest.mock import ANY, Mock, patch
 
 from mediafile import MediaFile
@@ -41,6 +37,10 @@ from beets.util.id_extractors import (
     deezer_id_regex,
     spotify_id_regex,
 )
+from test import helper
+from test._common import RSRC
+from test.test_importer import AutotagStub, ImportHelper
+from test.test_ui_importer import TerminalImportSessionSetup
 
 
 class TestHelper(helper.TestHelper):
