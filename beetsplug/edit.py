@@ -12,8 +12,7 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""Open metadata information in a text editor to let the user edit it.
-"""
+"""Open metadata information in a text editor to let the user edit it."""
 
 import codecs
 import os
@@ -23,7 +22,7 @@ from tempfile import NamedTemporaryFile
 
 import yaml
 
-from beets import plugins, ui, util, config
+from beets import config, plugins, ui, util
 from beets.dbcore import types
 from beets.importer import action
 from beets.ui.commands import PromptChoice, _do_query
@@ -246,7 +245,7 @@ class EditPlugin(plugins.BeetsPlugin):
                 old_str += f"# - {key}\n"
             for obj in old_data:
                 # those values will be enforced later anyway
-                obj.update({k:v.get() for k,v in set_fields.items()})
+                obj.update({k: v.get() for k, v in set_fields.items()})
         else:
             old_str = ""
 

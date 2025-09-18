@@ -12,8 +12,7 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""Parsing of strings into DBCore queries.
-"""
+"""Parsing of strings into DBCore queries."""
 
 import itertools
 import re
