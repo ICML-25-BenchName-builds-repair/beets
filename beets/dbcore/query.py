@@ -121,7 +121,8 @@ class NamedQuery(Query):
     """
 
     @abstractmethod
-    def __init__(self, pattern): ...
+    def __init__(self, pattern):
+        ...
 
 
 P = TypeVar("P")
