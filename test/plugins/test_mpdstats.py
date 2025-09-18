@@ -14,12 +14,12 @@
 
 
 import unittest
-from test.helper import TestHelper
 from unittest.mock import ANY, Mock, call, patch
 
 from beets import util
 from beets.library import Item
 from beetsplug.mpdstats import MPDStats
+from test.helper import TestHelper
 
 
 class MPDStatsTest(unittest.TestCase, TestHelper):
