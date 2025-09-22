@@ -12,19 +12,18 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""Tests the facility that lets plugins add custom field to MediaFile.
-"""
+"""Tests the facility that lets plugins add custom field to MediaFile."""
 
 import os
 import shutil
 import unittest
-from test import _common
 
 import mediafile
 
 from beets.library import Item
 from beets.plugins import BeetsPlugin
 from beets.util import bytestring_path, syspath
+from test import _common
 
 field_extension = mediafile.MediaField(
     mediafile.MP3DescStorageStyle("customtag"),

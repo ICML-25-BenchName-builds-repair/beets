@@ -14,7 +14,6 @@
 
 
 import unittest
-from test.helper import TestHelper, has_program
 
 from mediafile import MediaFile
 
@@ -23,6 +22,7 @@ from beetsplug.replaygain import (
     FatalGstreamerPluginReplayGainError,
     GStreamerBackend,
 )
+from test.helper import TestHelper, has_program
 
 try:
     import gi

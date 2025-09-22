@@ -11,8 +11,7 @@
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 
-"""Exports data from beets
-"""
+"""Exports data from beets"""
 
 
 import codecs
@@ -74,7 +73,7 @@ class ExportPlugin(BeetsPlugin):
                 "xml": {
                     # XML module formatting options.
                     "formatting": {}
-                }
+                },
                 # TODO: Use something like the edit plugin
                 # 'item_fields': []
             }
