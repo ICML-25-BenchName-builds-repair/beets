@@ -17,13 +17,13 @@ music player.
 """
 
 
-import _thread
 import copy
 import os
 import sys
 import time
 import urllib
 
+import _thread
 import gi
 
 from beets import ui
